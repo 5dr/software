@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="563.0" fitWidth="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@z1.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="65.0" layoutY="74.0" opacity="0.61" prefHeight="416.0" prefWidth="393.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100;">
+         <children>
+            <Label layoutX="135.0" layoutY="54.0" prefHeight="42.0" prefWidth="124.0" text="Sign In">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <TextField layoutX="119.0" layoutY="137.0" prefHeight="50.0" prefWidth="212.0" promptText="UserName" style="-fx-background-color: #4400bb;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="69.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z3.png" />
+               </image></ImageView>
+            <PasswordField layoutX="119.0" layoutY="208.0" prefHeight="50.0" prefWidth="212.0" promptText="PassWord" style="-fx-background-color: #4400bb;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </PasswordField>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="69.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z4.png" />
+               </image></ImageView>
+            <JFXButton layoutX="69.0" layoutY="275.0" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #4400bb; -fx-background-radius: 10;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="91.0" fitWidth="73.0" layoutX="225.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@z2.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

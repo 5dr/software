@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller ="soft.FXMLDocumentController" fx:id="main_pane" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.78" prefHeight="630.0" prefWidth="713.0" style="-fx-background-color: #e7f0ff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXHamburger fx:id="h" alignment="TOP_CENTER" layoutY="6.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="30.0" />
+      <JFXDrawer fx:id="d" defaultDrawerSize="250.0" layoutY="29.0" prefHeight="598.0" prefWidth="251.0">
+         <children>
+            <Pane fx:id="p" layoutY="29.0" prefHeight="658.0" prefWidth="251.0" style="-fx-background-color: #cfaff0;">
+               <children>
+                  <ImageView fitHeight="203.0" fitWidth="251.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton onAction ="#log" fx:id="log" layoutX="59.0" layoutY="346.0" prefHeight="43.0" prefWidth="128.0" style="-fx-background-color: #66009d;" text="LogIn" textFill="#00ffae">
+                     <font>
+                        <Font name="Bodoni MT Black" size="26.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="-4.0" layoutY="395.0" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #000000;" text="suggestion" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="-4.0" layoutY="465.0" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #000000;" text="discover us" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="-4.0" layoutY="535.0" prefHeight="70.0" prefWidth="254.0" style="-fx-background-color: #000000;" text="connect wiht us" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="26.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutY="201.0" prefHeight="38.0" prefWidth="251.0" style="-fx-background-color: #000000;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <JFXRadioButton fx:id="internal" layoutX="33.0" layoutY="261.0" selected="true" text="internal">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="g" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="external" layoutX="33.0" layoutY="291.0" text="external" toggleGroup="$g" />
+                  <JFXRadioButton fx:id="other" layoutX="33.0" layoutY="319.0" text="other" toggleGroup="$g" />
+               </children>
+            </Pane>
+         </children></JFXDrawer>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="-1.0" prefHeight="45.0" prefWidth="684.0" text="welcome" textFill="#0044ff">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

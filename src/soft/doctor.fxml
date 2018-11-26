@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="soft.c1" id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="363.0" layoutY="49.0" prefHeight="47.0" prefWidth="170.0" text="Research" textFill="#0b3c79">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Line endX="303.0" layoutX="448.0" layoutY="96.0" opacity="0.34" startX="-100.0" />
+      <AnchorPane prefHeight="607.0" prefWidth="239.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Label layoutX="120.0" layoutY="36.0" prefHeight="59.0" prefWidth="124.0" text="Doctor" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="86.0" fitWidth="100.0" layoutX="28.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z9.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" layoutX="1.0" layoutY="153.0" prefHeight="70.0" prefWidth="300.0" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutY="222.0" prefHeight="70.0" prefWidth="300.0" text="Research" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="47.0" fitWidth="79.0" layoutX="48.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="79.0" layoutX="48.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z10.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="348.0" layoutY="151.0" prefHeight="288.0" prefWidth="489.0">
+        <columns>
+          <TableColumn prefWidth="84.0" text="ID" />
+          <TableColumn prefWidth="99.0" text="Name" />
+            <TableColumn prefWidth="305.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="574.0" layoutY="115.0" prefHeight="27.0" prefWidth="86.0" text="search" textFill="#0b3c79">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="639.0" layoutY="116.0" opacity="0.73" unFocusColor="#0b3c79" />
+      <JFXButton onAction="#exit" alignment="CENTER" layoutX="848.0" prefHeight="51.0" prefWidth="75.0" text="  ">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z7.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -50,7 +50,8 @@
                <image>
                   <Image url="@z4.png" />
                </image></ImageView>
-            <JFXButton onAction="#log1" layoutX="69.0" layoutY="275.0" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #4400bb; -fx-background-radius: 10;" text="Log In" textFill="WHITE">
+            <JFXToggleButton fx:id="toggel" layoutX="158.0" layoutY="338.0" prefHeight="58.0" prefWidth="55.0" unToggleColor="#00ffae" unToggleLineColor="#a3ffdf" />
+            <JFXButton layoutX="69.0" layoutY="275.0" onAction="#log2" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #4400bb; -fx-background-radius: 10;" text="Log In" textFill="WHITE">
                <font>
                   <Font size="23.0" />
                </font>
@@ -58,13 +59,12 @@
                   <InnerShadow />
                </effect>
             </JFXButton>
-            <JFXToggleButton fx:id="toggel" layoutX="161.0" layoutY="337.0" prefHeight="58.0" prefWidth="50.0" unToggleColor="#00ffae" unToggleLineColor="#a3ffdf" />
-            <Label fx:id="l1" layoutX="88.0" layoutY="353.0" text="Admain">
+            <Label fx:id="l1" layoutX="31.0" layoutY="353.0" text="M_of_education">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="l2" layoutX="246.0" layoutY="353.0" text="Doctor">
+            <Label fx:id="l2" layoutX="236.0" layoutY="353.0" text="M_of_health">
                <font>
                   <Font size="18.0" />
                </font>

@@ -5,11 +5,13 @@
  */
 package soft;
 
+import java.awt.Color;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -19,11 +21,11 @@ public class Soft extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+       
         Scene scene = new Scene(root);
-        
         stage.setScene(scene);
+    //    stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
     }
 

@@ -24,7 +24,7 @@
     <jar href="lib\fxsampler-1.0.10.jar" size="30882" download="eager" />
     <jar href="lib\jfoenix-8.0.1.jar" size="2405715" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.42-bin.jar" size="996444" download="eager" />
-    <jar href="soft.jar" size="62944" download="eager" />
+    <jar href="soft.jar" size="90824" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="soft" >
     <param name="requiredFXVersion" value="8.0+"/>
